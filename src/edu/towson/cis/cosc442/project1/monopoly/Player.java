@@ -5,6 +5,9 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 
 
+/**
+ * Represents the Player component of the Monopoly application.
+ */
 public class Player {
 	//the key of colorGroups is the name of the color group.
 	private Hashtable<String, Integer> colorGroups = new Hashtable<String, Integer>();

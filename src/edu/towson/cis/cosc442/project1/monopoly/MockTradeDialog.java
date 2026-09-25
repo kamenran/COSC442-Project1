@@ -1,5 +1,8 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
+/**
+ * Represents the MockTradeDialog component of the Monopoly application.
+ */
 public class MockTradeDialog implements TradeDialog {
 
     public TradeDeal getTradeDeal() {

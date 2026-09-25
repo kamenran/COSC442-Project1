@@ -1,5 +1,8 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
+/**
+ * Represents the MockGUI component of the Monopoly application.
+ */
 public class MockGUI implements MonopolyGUI {
     private boolean btnDrawCardState, btnEndTurnState, btnGetOutOfJailState;
     private boolean[] btnTradeState = new boolean[2];

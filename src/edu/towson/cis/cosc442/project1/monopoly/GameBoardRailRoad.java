@@ -1,5 +1,8 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
+/**
+ * Represents the GameBoardRailRoad component of the Monopoly application.
+ */
 public class GameBoardRailRoad extends GameBoard {
 	public GameBoardRailRoad() {
 		super();

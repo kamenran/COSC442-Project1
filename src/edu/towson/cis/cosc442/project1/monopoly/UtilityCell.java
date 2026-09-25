@@ -1,5 +1,8 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
+/**
+ * Represents the UtilityCell component of the Monopoly application.
+ */
 public class UtilityCell extends Cell {
 
 	public static final String COLOR_GROUP = "UTILITY";

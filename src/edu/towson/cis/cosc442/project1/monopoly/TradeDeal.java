@@ -1,5 +1,8 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
+/**
+ * Represents the TradeDeal component of the Monopoly application.
+ */
 public class TradeDeal {
     private int amount;
     private int playerIndex;

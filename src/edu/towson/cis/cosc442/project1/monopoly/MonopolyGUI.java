@@ -1,5 +1,8 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
+/**
+ * Represents the MonopolyGUI component of the Monopoly application.
+ */
 public interface MonopolyGUI {
 	public void enableEndTurnBtn(int playerIndex);
 	public void enablePlayerTurn(int playerIndex);

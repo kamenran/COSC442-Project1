@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 
+/**
+ * Represents the GameMaster component of the Monopoly application.
+ */
 public class GameMaster {
 
 	private static GameMaster gameMaster;

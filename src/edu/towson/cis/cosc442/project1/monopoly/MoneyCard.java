@@ -1,5 +1,8 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
+/**
+ * Represents the MoneyCard component of the Monopoly application.
+ */
 public class MoneyCard extends Card {
     private int amount;
     private int cardType;

@@ -1,6 +1,9 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
 
+/**
+ * Represents the GameBoardCCMovePlayer component of the Monopoly application.
+ */
 public class GameBoardCCMovePlayer extends GameBoard {
     public GameBoardCCMovePlayer() {
 		super();

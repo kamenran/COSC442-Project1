@@ -1,6 +1,9 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
 
+/**
+ * Represents the MovePlayerCard component of the Monopoly application.
+ */
 public class MovePlayerCard extends Card {
     
     private String destination;

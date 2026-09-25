@@ -1,5 +1,8 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
+/**
+ * Represents the RailRoadCell component of the Monopoly application.
+ */
 public class RailRoadCell extends Cell {
 	static private int baseRent;
 	static public String COLOR_GROUP = "RAILROAD";

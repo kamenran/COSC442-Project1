@@ -1,6 +1,9 @@
 package edu.towson.cis.cosc442.project1.monopoly;
 
 
+/**
+ * Represents the GameBoard14 component of the Monopoly application.
+ */
 public class GameBoard14 extends GameBoard {
 	public GameBoard14() {
 		super();
