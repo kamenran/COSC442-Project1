@@ -6,6 +6,14 @@ public class PlayerTest extends TestCase {
 
 	GameMaster gameMaster;
 	
+	/**
+	 * Executes setUp.
+	 * @throws Exception an exception if an error occurs
+	 */
+	/**
+	 * Executes setUp.
+	 * @throws Exception an exception if an error occurs
+	 */
 	protected void setUp() throws Exception {
 		gameMaster = GameMaster.instance();
 		gameMaster.setGameBoard(new SimpleGameBoard());
@@ -14,6 +22,12 @@ public class PlayerTest extends TestCase {
         gameMaster.reset();
 	}
 	
+	/**
+	 * Executes testPurchaseProperty.
+	 */
+	/**
+	 * Executes testPurchaseProperty.
+	 */
 	public void testPurchaseProperty() {
 		gameMaster.setNumberOfPlayers(1);
 		gameMaster.movePlayer(0, 3);
@@ -23,9 +37,15 @@ public class PlayerTest extends TestCase {
 		assertEquals("Blue 3", player.getProperty(0).getName());
 		PropertyCell cell =
 			(PropertyCell) gameMaster.getGameBoard().queryCell("Blue 3");
-		assertSame(player, cell.getOwner());
+		assertSame(player, cell.getTheOwner());
 	}
 
+	/**
+	 * Executes testSameGoCell.
+	 */
+	/**
+	 * Executes testSameGoCell.
+	 */
 	public void testSameGoCell() {
 		GameBoard gameboard = gameMaster.getGameBoard();
 		Player player1 = new Player();
@@ -35,6 +55,12 @@ public class PlayerTest extends TestCase {
 		assertSame(go, player2.getPosition());
 	}
 	
+	/**
+	 * Executes testPayRentTo.
+	 */
+	/**
+	 * Executes testPayRentTo.
+	 */
 	public void testPayRentTo() {
 		gameMaster.setNumberOfPlayers(2);
 		gameMaster.movePlayer(0,4);
@@ -46,6 +72,12 @@ public class PlayerTest extends TestCase {
 		assertEquals(2800, gameMaster.getPlayer(0).getMoney());
 	}
 	
+	/**
+	 * Executes testExchangeProperty.
+	 */
+	/**
+	 * Executes testExchangeProperty.
+	 */
 	public void testExchangeProperty() {
 		gameMaster.setNumberOfPlayers(2);
 		gameMaster.movePlayer(0,3);
@@ -55,6 +87,12 @@ public class PlayerTest extends TestCase {
 		assertEquals(1,gameMaster.getCurrentPlayer().getPropertyNumber());
 	}
 	
+	/**
+	 * Executes testPurchaseHouse.
+	 */
+	/**
+	 * Executes testPurchaseHouse.
+	 */
 	public void testPurchaseHouse() {
 		gameMaster.setNumberOfPlayers(1);
 		gameMaster.startGame();
@@ -72,6 +110,12 @@ public class PlayerTest extends TestCase {
 		assertEquals(880, gameMaster.getCurrentPlayer().getMoney());
 	}
 	
+	/**
+	 * Executes testResetProperty.
+	 */
+	/**
+	 * Executes testResetProperty.
+	 */
 	public void testResetProperty() {
 		gameMaster.setNumberOfPlayers(1);
 		gameMaster.movePlayer(0,1);
