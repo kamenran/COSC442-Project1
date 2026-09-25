@@ -56,8 +56,7 @@ public class GameBoard {
     public void addCell(PropertyCell cell) {
         String colorGroup = cell.getColorGroup();
         int propertyNumber = getPropertyNumberForColor(colorGroup);
-        colorGroups.put(colorGroup, new Integer(propertyNumber + 1));
-        cells.add(cell);
+colorGroups.put(colorGroup, propertyNumber + 1);        cells.add(cell);
     }
 
     /**
@@ -67,8 +66,7 @@ public class GameBoard {
      * @return the community chest card drawn
      */
     public Card drawCCCard() {
-        Card card = (Card) communityChestCards.get(0);
-        communityChestCards.remove(0);
+Card card = communityChestCards.get(0);        communityChestCards.remove(0);
         addCard(card);
         return card;
     }
@@ -79,7 +77,7 @@ public class GameBoard {
      * @return the chance card drawn
      */
     public Card drawChanceCard() {
-        Card card = (Card) chanceCards.get(0);
+Card card = chanceCards.get(0);
         chanceCards.remove(0);
         addCard(card);
         return card;
@@ -92,8 +90,7 @@ public class GameBoard {
      * @return the cell at the given index
      */
     public Cell getCell(int newIndex) {
-        return (Cell) cells.get(newIndex);
-    }
+return cells.get(newIndex);    }
 
     /**
      * Returns the number of cells on the game board.
